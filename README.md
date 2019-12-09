@@ -23,4 +23,4 @@ docker run --rm -e "PLATFORM=windows" -v "${PWD}:/target" ruverav/stadia-electro
 
 The electron app folder will be exported to your current working directory (`$PWD`) when running the command above and the docker container will be deleted once the task is finished. It shouldn't take long.
 
-You can also specifty the architecture with the `$ARCH` environment variable (possible strings: `ia32`, `x64` or `armv7l`, defaults to `x64` if not specified).
+You can also specify the architecture with the `$ARCH` environment variable (possible strings: `ia32`, `x64` or `armv7l`, defaults to `x64` if not specified).

@@ -12,5 +12,6 @@ ENV STADIA_URL "https://stadia.google.com/home"
 WORKDIR /src
 COPY src/build.sh /src
 COPY src/stadia.ico /src
+RUN chmod a+x /src/build.sh
 
 ENTRYPOINT [ "/src/build.sh" ]
