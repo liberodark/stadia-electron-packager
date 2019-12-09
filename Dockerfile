@@ -10,8 +10,7 @@ ENV MIN_HEIGHT "800"
 ENV STADIA_URL "https://stadia.google.com/home"
 
 WORKDIR /src
-COPY src/build.sh /src
-COPY src/stadia.ico /src
-RUN chmod a+x /src/build.sh
+COPY --chown=node:node src/ .
+RUN chmod +x build.sh
 
 ENTRYPOINT [ "/src/build.sh" ]
